@@ -1,5 +1,6 @@
 package com.api;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WindowType;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -13,7 +14,7 @@ public class Main {
 
 
         //Configure ruote  chormedriver
-        System.setProperty("webdriver.chorme.driver","C:\\Users\\Sebastian\\Downloads\\chromedriver-win64");
+        WebDriverManager.chromedriver().setup();
 
 
         //create instance
